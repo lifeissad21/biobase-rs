@@ -176,33 +176,6 @@ pre code {
   color: var(--code-ink);
 }
 
-.copy-code {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  padding: 4px 9px;
-  border: 1px solid var(--code-line);
-  border-radius: 6px;
-  background: #fff;
-  color: var(--accent-dark);
-  font: inherit;
-  font-size: 12px;
-  line-height: 1.4;
-  cursor: pointer;
-}
-
-.copy-code:hover,
-.copy-code:focus {
-  border-color: var(--accent);
-  outline: none;
-}
-
-.copy-code.copied {
-  color: #fff;
-  border-color: var(--accent-dark);
-  background: var(--accent-dark);
-}
-
 /* Rouge token styles for Jekyll-highlighted code blocks. */
 .highlight .c,
 .highlight .c1,
