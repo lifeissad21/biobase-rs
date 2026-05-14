@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="{{ '/' | relative_url }}">biobase-rs</a>
+    <span class="tagline">Biobase concepts, native Rust APIs</span>
+  </header>
+  <div class="shell">
+    <nav class="sidebar" aria-label="Documentation navigation">
+      {% for group in site.data.navigation %}
+      <section class="nav-group">
+        <h2>{{ group.title }}</h2>
+        <ul>
+          {% for item in group.pages %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endfor %}
+    </nav>
+    <main class="content">
+      <p class="ai-disclosure">This Rust port and documentation were created with AI assistance from the original Biobase reference materials, then adapted to the APIs implemented in this crate.</p>
+      {{ content }}
+      <footer class="page-footer">
+        <p>Ported and documented with AI assistance. Review implementation details before relying on this crate in production workflows.</p>
+      </footer>
+    </main>
+  </div>
+  <script src="{{ '/assets/codeblocks.js' | relative_url }}"></script>
+</body>
+</html>

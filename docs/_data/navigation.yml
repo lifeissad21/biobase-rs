@@ -1,0 +1,60 @@
+- title: Start
+  pages:
+    - title: Overview
+      url: /
+    - title: Installation
+      url: /installation.html
+    - title: Getting Started
+      url: /getting-started.html
+- title: Concepts
+  pages:
+    - title: Object Model
+      url: /concepts/object-model.html
+    - title: ExpressionSet
+      url: /concepts/expression-set.html
+    - title: Metadata
+      url: /concepts/metadata.html
+    - title: Annotations
+      url: /concepts/annotations.html
+- title: Tutorials
+  pages:
+    - title: First Analysis
+      url: /tutorials/first-analysis.html
+    - title: Working With Expression Data
+      url: /tutorials/working-with-expression-data.html
+    - title: Metadata Operations
+      url: /tutorials/metadata-operations.html
+    - title: Migrating From R
+      url: /tutorials/migrating-from-r.html
+- title: API Guides
+  pages:
+    - title: Matrix and Values
+      url: /api-guides/matrix-and-values.html
+    - title: ExpressionSet
+      url: /api-guides/expressionset.html
+    - title: AnnotatedDataFrame
+      url: /api-guides/annotateddataframe.html
+    - title: AssayData
+      url: /api-guides/assaydata.html
+    - title: Row Operations
+      url: /api-guides/row-operations.html
+    - title: MultiSet, NChannelSet, SnpSet
+      url: /api-guides/specialized-sets.html
+    - title: Versioning
+      url: /api-guides/versioning.html
+    - title: Utilities
+      url: /api-guides/utilities.html
+- title: Data
+  pages:
+    - title: Datasets
+      url: /datasets/index.html
+    - title: Examples
+      url: /examples/index.html
+- title: Developer
+  pages:
+    - title: Architecture
+      url: /developer/architecture.html
+    - title: Implementation Notes
+      url: /developer/implementation-notes.html
+    - title: Source Migration Map
+      url: /developer/source-migration-map.html
