@@ -30,7 +30,11 @@
   function enhanceCodeBlocks() {
     var blocks = document.querySelectorAll(".highlight");
     blocks.forEach(function (block) {
-      if (block.parentElement && block.parentElement.classList.contains("code-block")) {
+      if (block.closest(".code-block")) {
+        return;
+      }
+
+      if (block.parentElement && block.parentElement.closest(".highlight")) {
         return;
       }
 
